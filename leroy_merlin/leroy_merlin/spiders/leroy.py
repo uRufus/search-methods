@@ -25,5 +25,4 @@ class LeroySpider(scrapy.Spider):
         loader.add_xpath('price', ".//span[@slot='price']/text()")
         loader.add_xpath('curr', ".//span[@slot='currency']/text()")
         loader.add_xpath('photos', ".//media-carousel[@slot='media-content']/picture/source/@srcset")
-        loader.add_xpath('photos', ".//a[@class='bex6mjh_plp b1f5t594_plp iypgduq_plp nf842wf_plp']/@href")
         loader.load_item()
